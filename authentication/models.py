@@ -24,6 +24,7 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     password = models.CharField(max_length=128) 
+    date_joined = models.DateTimeField(auto_now_add=True)
 
     objects = CustomUserManager() 
     

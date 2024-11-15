@@ -6,6 +6,8 @@ from .serializers import CustomUserSerializer
 from rest_framework import generics, status, serializers
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
+from rest_framework.views import APIView
+from django.shortcuts import get_object_or_404
 
 # JWT
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -47,8 +49,17 @@ class CustomTokenObtainedPairSerializer(TokenObtainPairSerializer):
      data = super().validate(attrs)
      data['email'] = user.email
      data['name'] = f"{user.first_name} {user.last_name}"
+     data['id'] = user.id
      return data
 
 
 class LoginView(TokenObtainPairView):
   serializer_class = CustomTokenObtainedPairSerializer
+  
+
+# Get User By Id
+class GetUserByIdView(APIView):
+    def get(self, request, user_id, *args, **kwargs):
+        user = get_object_or_404(CustomUser, id=user_id)
+        serializer = CustomUserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)

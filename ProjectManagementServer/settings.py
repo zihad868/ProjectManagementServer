@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     
     # Custom App
     "authentication",
+    "projects"
 ]
 
 MIDDLEWARE = [

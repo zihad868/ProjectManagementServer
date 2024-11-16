@@ -8,6 +8,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
 
 # JWT
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -66,6 +67,8 @@ class GetUserByIdView(APIView):
       
       
 class UpdateUserView(APIView):
+  permission_classes = [IsAuthenticated]
+  
   def put(self, request, user_id, *args, **kwargs):
     user = get_object_or_404(CustomUser, id=user_id)
     serializer = CustomUserSerializer(user, data=request.data)
@@ -90,6 +93,8 @@ class UpdateUserView(APIView):
 
 # Delete User
 class DeleteUserView(APIView):
+  permission_classes = [IsAuthenticated]
+  
   def delete(self, request, user_id, *args, **kwargs):
     user = get_object_or_404(CustomUser, id=user_id)
     

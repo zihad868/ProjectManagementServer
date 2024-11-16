@@ -27,6 +27,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
             last_name=validated_data['last_name']
         )
         
+        return user
       
     
     def update(self, instance, validated_data):

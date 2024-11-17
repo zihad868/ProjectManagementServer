@@ -8,6 +8,7 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 
 
+# Project Start
 class ProjectListCreateView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -57,3 +58,7 @@ class ProjectDetailView(APIView):
         project = get_object_or_404(Projects, id=id, owner=request.user)
         project.delete()
         return Response({"message": "Project deleted successfully."}, status=status.HTTP_204_NO_CONTENT)
+
+# Project End
+
+

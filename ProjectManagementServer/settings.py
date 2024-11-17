@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     # Packages
     "rest_framework_simplejwt",
+    'drf_yasg',
     
     # Custom App
     "authentication",
@@ -143,4 +144,18 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
     ),
+}
+
+
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+        }
+    },
+    'USE_SESSION_AUTH': False,  # Disable session-based authentication
+    'DEFAULT_MODEL_RENDERING': 'example',  # Show example values for models
 }

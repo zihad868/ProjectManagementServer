@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     # Custom App
     "authentication",
     "projects",
-    "tasks"
+    "tasks",
+    "comments"
 ]
 
 MIDDLEWARE = [

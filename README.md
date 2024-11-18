@@ -28,7 +28,7 @@
 -  python manage.py migrate 
 -  python manage.py runserver
 
-## OR Git Clone & code to main project directory run
+## OR Git Clone & go to main project directory run
  -  pip install -r requirements.txt
  -  cd ProjectManagementServer
  -  python manage.py makemigrations

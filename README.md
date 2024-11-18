@@ -9,6 +9,10 @@
 - Task Management: CRUD operations on tasks within projects with priority and status tracking.
 - Comment Management: Commenting on tasks with retrieval, updates, and deletions.
 
+  ##  Authentication
+- After logging in, include the token in the Authorization header:
+  Authorization: Token   your-token-here
+
 
 ## Clone and Run Local
 -  pip install virtualenv 

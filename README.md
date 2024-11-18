@@ -11,7 +11,7 @@
 
   ##  Authentication
 - After logging in, include the token in the Authorization header:
-  Authorization: Token   your-token-here
+  Authorization:  Bearer access token
 
 
 ## Clone and Run Local

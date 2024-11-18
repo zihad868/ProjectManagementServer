@@ -2,6 +2,14 @@
 -  http://127.0.0.1:8000/api-listing/
 -  http://127.0.0.1:8000/api-documentation/
 
+  
+  ## Features
+- User Management: Register, log in, retrieve, update, and delete user accounts.
+-Project Management: Create, list, update, and delete projects with owner and member roles.
+-Task Management: CRUD operations on tasks within projects with priority and status tracking.
+-Comment Management: Commenting on tasks with retrieval, updates, and deletions.
+
+
 ## Clone and Run Local
 -  pip install virtualenv 
 -  virtualenv env                    --->  ( For Linux )

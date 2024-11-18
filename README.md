@@ -14,7 +14,7 @@
   Authorization:  Bearer access token
 
 
-## Clone and Run Local
+## Clone and Run Local Manually 
 -  pip install virtualenv 
 -  virtualenv env                    --->  ( For Linux )
 -  source ./env/bin/activate   --->  ( For Linux )
@@ -28,4 +28,12 @@
 -  python manage.py migrate 
 -  python manage.py runserver
 
+## OR Git Clone & code to main project directory run
+  pip install -r requirements.txt
+
+
+
+## Clone and Run Local
+# Clone and Run Local
+-  pip install virtualenv 
   

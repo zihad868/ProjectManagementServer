@@ -27,7 +27,8 @@
 -  git clone https://github.com/zihad868/ProjectManagementServer.git
 -  cd ProjectManagementServer
 -  python manage.py makemigrations
--  python manage.py migrate 
+-  python manage.py migrate
+-  python manage.py createsuperuser
 -  python manage.py runserver
 
 ## OR Git Clone & go to main project directory run
@@ -38,25 +39,32 @@
  -  python manage.py runserver
 
 
-  
+API Endpoints
 Users
-Register User (POST /api/users/register/): Create a new user.
-Login User (POST /api/users/login/): Authenticate a user and return a token.
-Get User Details (GET /api/users/{id}/): Retrieve details of a specific user.
-Update User (PUT/PATCH /api/users/{id}/): Update user details.
-Delete User (DELETE /api/users/{id}/): Delete a user account.
-- Projects
-List Projects (GET /api/projects/): Retrieve a list of all projects.
-Create Project (POST /api/projects/): Create a new project.
-Retrieve Project (GET /api/projects/{id}/): Retrieve details of a specific
-project.
-Update Project (PUT/PATCH /api/projects/{id}/): Update project details.
-Delete Project (DELETE /api/projects/{id}/): Delete a project.
-- Task
-List Tasks (GET /api/projects/{project_id}/tasks/): Retrieve a list of all tasks in
-a project.
-Create Task (POST /api/projects/{project_id}/tasks/): Create a new task in a
-project.
-Retrieve Task (GET /api/tasks/{id}/): Retrieve details of a specific task.
-Update Task (PUT/PATCH /api/tasks/{id}/): Update task details.
-Delete Task (DELETE /api/tasks/{id}/): Delete a task.
+Method	Endpoint	Description
+POST	/api/users/register/	Register a new user.
+POST	/api/users/login/	Authenticate a user.
+GET	/api/users/{id}/	Retrieve user details.
+PUT	/api/users/{id}/	Update user details.
+DELETE	/api/users/{id}/	Delete a user account.
+Projects
+Method	Endpoint	Description
+GET	/api/projects/	List all projects.
+POST	/api/projects/	Create a new project.
+GET	/api/projects/{id}/	Retrieve project details.
+PUT	/api/projects/{id}/	Update a project.
+DELETE	/api/projects/{id}/	Delete a project.
+Tasks
+Method	Endpoint	Description
+GET	/api/projects/{project_id}/tasks/	List all tasks in a project.
+POST	/api/projects/{project_id}/tasks/	Create a new task.
+GET	/api/tasks/{id}/	Retrieve task details.
+PUT	/api/tasks/{id}/	Update a task.
+DELETE	/api/tasks/{id}/	Delete a task.
+Comments
+Method	Endpoint	Description
+GET	/api/tasks/{task_id}/comments/	List all comments on a task.
+POST	/api/tasks/{task_id}/comments/	Add a comment to a task.
+GET	/api/comments/{id}/	Retrieve a specific comment.
+PUT	/api/comments/{id}/	Update a comment.
+DELETE	/api/comments/{id}/	Delete a comment.

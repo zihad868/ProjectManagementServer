@@ -39,3 +39,24 @@
 
 
   
+Users
+Register User (POST /api/users/register/): Create a new user.
+Login User (POST /api/users/login/): Authenticate a user and return a token.
+Get User Details (GET /api/users/{id}/): Retrieve details of a specific user.
+Update User (PUT/PATCH /api/users/{id}/): Update user details.
+Delete User (DELETE /api/users/{id}/): Delete a user account.
+- Projects
+List Projects (GET /api/projects/): Retrieve a list of all projects.
+Create Project (POST /api/projects/): Create a new project.
+Retrieve Project (GET /api/projects/{id}/): Retrieve details of a specific
+project.
+Update Project (PUT/PATCH /api/projects/{id}/): Update project details.
+Delete Project (DELETE /api/projects/{id}/): Delete a project.
+- Task
+List Tasks (GET /api/projects/{project_id}/tasks/): Retrieve a list of all tasks in
+a project.
+Create Task (POST /api/projects/{project_id}/tasks/): Create a new task in a
+project.
+Retrieve Task (GET /api/tasks/{id}/): Retrieve details of a specific task.
+Update Task (PUT/PATCH /api/tasks/{id}/): Update task details.
+Delete Task (DELETE /api/tasks/{id}/): Delete a task.

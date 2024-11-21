@@ -32,8 +32,10 @@
 -  python manage.py runserver
 
 ## OR Git Clone & go to main project directory run
+ -  git clone https://github.com/zihad868/ProjectManagementServer.git
  -  pip install -r requirements.txt
  -  cd ProjectManagementServer
  -  python manage.py makemigrations
- -  python manage.py migrate 
+ -  python manage.py migrate
+ -  python manage.py  createsuperuser
  -  python manage.py runserver

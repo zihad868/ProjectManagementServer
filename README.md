@@ -41,6 +41,8 @@
  -  python manage.py runserver
 
 
+# API Documentation
+
 ### Authentication
 
 - **POST** `/api/users/register/`

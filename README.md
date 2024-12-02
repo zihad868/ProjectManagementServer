@@ -103,13 +103,22 @@
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     - Response: `Project Details`
 
-- **GET** `/api/tasks/{task id}/`
+
+
+  - **POST** `/api/projects/{project id}/tasks/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
-    - Response: `Specific task details`
+    -  Body: `{"title": "string", "description": "string"}`
+
+ 
+ - **GET** `/api/tasks/{task id}/`
+    - Header: `{Authorization:  Bearer  {Your Login Token}}`
+    - Response: `Specific task details` 
+
 
  - **PATCH** `/api/tasks/{task id}/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     -  Body: `{"title": "string"}`
+  
    
  - **PUT** `/api/tasks/{task id}/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`

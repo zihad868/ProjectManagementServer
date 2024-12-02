@@ -1,6 +1,6 @@
 ## Django  Project Management API
 
-#  API Documentation 
+#  Swaggwer API Documentation 
 -  http://127.0.0.1:8000/api-listing/
 -  http://127.0.0.1:8000/api-documentation/
 
@@ -10,11 +10,7 @@
 - Project Management: Create, list, update, and delete projects with owner and member roles.
 - Task Management: CRUD operations on tasks within projects with priority and status tracking.
 - Comment Management: Commenting on tasks with retrieval, updates, and deletions.
-
-  ##  Authentication
-- After logging in, include the token in the Authorization header:
-  Authorization:  Bearer access token
-
+  
 
 ## Clone and Run Local Manually 
 -  pip install virtualenv 

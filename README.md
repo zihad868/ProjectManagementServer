@@ -103,7 +103,7 @@
 
 
 
-  - **POST** `/api/projects/{project id}/tasks/`
+ - **POST** `/api/projects/{project id}/tasks/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     -  Body: `{"title": "string", "description": "string"}`
 
@@ -132,8 +132,9 @@
 - **GET** `/api/tasks/{task id}/comments/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     - Response: `Get comments specific task`
- 
-  - **POST** `/api/tasks/{task id}/comments/`
+
+
+ - **POST** `/api/tasks/{task id}/comments/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     -  Body: `{"content": "string"}`
 

@@ -141,3 +141,8 @@
  - **PUT** `/api/comments/{comment id}/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     -  Body: `{"content": "string"}`
+
+      
+  - **DELETE**  `/api/comments/{comment id}/`
+    - Header: `{Authorization:  Bearer  {Your Login Token}}`
+    -  Response: `Task deleted successfully.`

@@ -66,8 +66,8 @@
 - **PUT** `/api/users/{user id}/update/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     - Body: `{"username": "string", "email": "your email" "password": "string", "first_name": "string", "last_name": "string"}`
-      
-   - **DELETE** `/api/users/{user id}/delete/`
+
+- **DELETE** `/api/users/{user id}/delete/`
     - Header: `{Authorization:  Bearer  {Your Login Token}}`
     -  Response: `User deleted successfully.`
 
